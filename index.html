@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Assignment-1</title>
+  </head>
+  <body>
+    <div class="class1">First Div</div>
+    <div class="class2">Second Div</div>
+    <div class="class3">Third Div</div>
+
+    <div class="common">Fourth Div</div>
+    <div class="common">Fifth Div</div>
+    <div class="common">Sixth Div</div>
+
+    <div>
+      <div id="uniqueid">Seventh Div</div>
+      <div class="eightdiv">Eight Div</div>
+    </div>
+    <div>Ninth Div</div>
+    <p>Write Your Experience Here</p>
+  </body>
+  <script>  
+  document.querySelector("div.class1").innerHTML ="Abdul Mumin," 
+  document.querySelector("div.class2").innerHTML ="My name is Abdul Mumin.I love to play cricket "
+  let arr = document.getElementsByClassName("class3")
+  for(let i=0; i<arr.length; i++){
+    arr[i].style.color ="red"
+    
+  }
+  let arr2 = document.getElementsByClassName("common")
+  for(let i=0; i<arr2.length;i++){
+    arr2[i].style.border = "2px solid black"
+    arr2[i].style.padding = "10px"
+    arr2[i].style.margin = "10px"
+  }
+  document.getElementById("uniqueid").innerHTML+="Aircampus"
+
+  
+ document.getElementsByTagName("div")[8].innerHTML= "This is my first assignment"
+
+ document.getElementsByTagName("div")[9].innerText= "My Experience with AirCampus"
+document.getElementsByTagName("div")[9].style.fontSize="36px"
+document.getElementsByTagName("div")[9].style.color="red"
+
+document.getElementsByTagName("p")[0].innerText ="Aircampus provides a comfortable environment to learn and gives us full support to enhance skills in software development field "
+
+  </script>
+</html>
